@@ -99,8 +99,8 @@ const Shipping = ({ next }) => {
   const countriesList = data?.map((item) => item.name.common) || [];
 
   return (
-    <div className="font-poppins text-lg">
-      <div className=" mx-auto lg:flex bg-gradient-to-r from-indigo-300 to-neutral-600 backdrop-blur-lg rounded-2xl shadow-lg p-3 lg:w-[70%] gap-x-3">
+    <div className="font-poppins text-lg ">
+      <div className=" mx-auto lg:flex bg-gradient-to-r from-violet-400 to-neutral-700 backdrop-blur-lg rounded-2xl shadow-lg shadow-neutral-700 p-3 lg:w-[70%] gap-x-3">
         <section className="flex flex-col gap-4 lg:w-[45%]">
           <h2 className=" text-[22px] font-semibold">Shipping Details</h2>
           <form onSubmit={handleSubmit} className=" space-y-4 px-2.5">
@@ -166,15 +166,16 @@ const Shipping = ({ next }) => {
               required
             />
             <div className="flex gap-x-1.5 mt-6">
-              <CustomButton type={"submit"} color={"bg-green-400"}>
-                Proceed to Payment
-              </CustomButton>
+             
               <CustomButton
                 type="button"
                 onClick={() => navigate("/")}
-                color={"bg-red-500"}
+                color={"bg-yellow-500"}
               >
                 Back to Cart
+              </CustomButton>
+              <CustomButton type={"submit"} color={"bg-violet-700"}>
+                Proceed to Payment
               </CustomButton>
             </div>
           </form>

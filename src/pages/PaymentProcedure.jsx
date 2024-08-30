@@ -48,22 +48,22 @@ const PaymentProcedure = () => {
   ];
 
   const handleDone=()=>{
-    message.success('Order Recieved');
+    message.success(<h1 className=' font-poppins font-semibold'>Order Received</h1>);
     navigate("/");
     localStorage.removeItem('currentStep');
     setCurrent(0);
   }
 
   return (
-    <>
+    <div className=' bg-cover bg-no-repeat bg-center h-svh' style={{backgroundImage:"url('https://wallpaperbat.com/img/174021-grey-geometric-abstract-backgroundfor-website-wallpaper-bussines.jpg')"}}>
      <header className='bg-neutral-800 py-2 text-white font-poppins w-full text-[1.3rem] font-[500] fixed z-50'>
      <section className='flex justify-between container'>
       <h1>SysǪube</h1>
       <h1>Order Process</h1>
       </section>
      </header>
-    <div className="container pt-[7.2rem]">
-      <Steps current={current} className=' w-full lg:w-[70%] mx-auto font-poppins font-[600]'>
+    <div className=" pt-[7.2rem] container ">
+      <Steps current={current} className=' w-full lg:w-[70%] container mx-auto font-poppins font-[600]'>
         {steps.map((item) => (
           <Steps.Step key={item.title} title={item.title} />
         ))}
@@ -71,15 +71,15 @@ const PaymentProcedure = () => {
       <div className='mt-[24px]'>
         {steps[current].content}
       </div>
-      <div  className='mt-[6px] mx-auto lg:w-[70%] '>
+      <div  className='mt-[6px] mx-auto lg:w-[70%] font-poppins'>
         {current === steps.length - 1 && (
-          <CustomButton color={"bg-green-500"} onClick={handleDone}>
+          <CustomButton color={"bg-violet-600"} onClick={handleDone}>
             Place Order
           </CustomButton>
         )}
       </div>
     </div>
-    </>
+    </div>
   );
 };
 

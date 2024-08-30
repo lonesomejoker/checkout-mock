@@ -22,7 +22,7 @@ const OrderSummary = ({ prev }) => {
 
   return (
     <div className="font-poppins w-full lg:w-[70%] mx-auto">
-      <div className=" text-lg py-2 lg:py-5 px-2 rounded-[15px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-gray-200 bg-opacity-80 backdrop-blur-lg drop-shadow-lg gap-y-5">
+      <div className=" text-lg py-2 lg:py-5 px-2 rounded-[15px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white/30 backdrop-blur-md shadow-lg shadow-neutral-700 gap-y-5">
         <div className=" space-y-2 flex-1 font-medium px-3 md:col-span-2">
           <h1 className=" mb-1.5 md:mb-3 font-bold text-[18px] ">
             Order Details
@@ -39,7 +39,10 @@ const OrderSummary = ({ prev }) => {
                 />
                 <section>
                   <h1>{item.name}</h1>
-                  <h2>Price: NPR,{item.price} </h2>
+                  <h2>
+                    Price: {item.price}
+                    <span className="text-sm">Rs</span>{" "}
+                  </h2>
                   <h2>Quantity: {item.quantity}</h2>
                 </section>
               </div>
@@ -48,26 +51,37 @@ const OrderSummary = ({ prev }) => {
           <section>
             <h3>
               SubTotal:{" "}
-              <span className=" text-violet-600">NPR, {subTotal}</span>
+              <span className=" text-violet-600">
+                {subTotal}
+                <span className="text-sm">Rs</span>{" "}
+              </span>
             </h3>
             <h3>
               VAT added(13%):{" "}
-              <span className=" text-violet-600">NPR, {vatAdded}</span>
+              <span className=" text-violet-600">
+                {vatAdded}
+                <span className="text-sm">Rs</span>{" "}
+              </span>
             </h3>
             <h3>
               Shipping Cost:{" "}
-              <span className=" text-violet-600">NPR, {shippingCost}</span>
-            </h3>
-            <h3 className=" border-b-[3px] pb-1  border-violet-700">
-              Total:{" "}
               <span className=" text-violet-600">
-                NPR, {subTotal + vatAdded + shippingCost}
+                {" "}
+                {shippingCost}
+                <span className="text-sm">Rs</span>{" "}
               </span>
+            </h3>
+            <h3 className=" border-b-[3px] pb-1  border-violet-700 font-semibold">
+              Total:
+              <span className=" text-violet-600">
+                {subTotal + vatAdded + shippingCost}
+              </span>
+              <span className=" text-violet-600 text-sm">Rs</span>
             </h3>
           </section>
         </div>
         <div className=" lg:border-r-2 border-dashed border-gray-300 lg:border-l-2 lg:pl-3 text-[16px] flex-1 space-y-1 px-3">
-          <h1 className=" mb-1.5 md:mb-3 font-bold text-[18px] ">
+          <h1 className=" mb-1.5 md:mb-3 text-[18px] font-semibold">
             Shipping Info
           </h1>
           <h1>
@@ -114,8 +128,8 @@ const OrderSummary = ({ prev }) => {
           </h2>
         </div>
       </div>
-      <section>
-        <CustomButton color={"bg-red-500"} onClick={() => prev()}>
+      <section className=" mt-1.5">
+        <CustomButton color={"bg-yellow-400"} onClick={() => prev()}>
           Back to Payment Details
         </CustomButton>
       </section>

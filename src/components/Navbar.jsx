@@ -15,11 +15,12 @@ const Navbar = () => {
       <section className=' flex items-center gap-x-6'>
       <h2>HOME</h2>
       <Badge count={cart.length} color="green" showZero>
-            <Avatar
+            <Avatar className=' p-1'
               onClick={showDrawer}
               shape="square"
+              size={38}
               icon={
-                <RiShoppingCartLine className=" text-[20px] md:text-2xl" />
+                <RiShoppingCartLine className=" text-[2rem] md:text-[4rem]" />
               }
             />
           </Badge>
@@ -28,13 +29,14 @@ const Navbar = () => {
               theme={{
                 token: {
                   // Seed Token
-                  colorBgBase: "rgb(229 231 235)",
+                  colorBgBase: "rgb(212 212 212)",
                   colorText: "black",
+                  
                 },
               }}
             >
               <Drawer
-                width={window.innerWidth > 640 ? 400 : "65%"}
+                width={window.innerWidth > 640 ? 400 : "70%"}
                 title="Shopping Cart"
                 onClose={onClose}
                 open={open}

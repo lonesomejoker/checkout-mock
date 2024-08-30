@@ -5,9 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { paymentData } from '../app/slices/PaymentSlice';
 
 const PaymentInfo = ({next,prev}) => {
-  const dispatch=useDispatch();
-  const {details}=useSelector((state)=>state.shippingslice);
-  
+  const dispatch=useDispatch();  
   const[form,setForm]=useState(
     {
       holder_name: "",
@@ -61,9 +59,9 @@ const PaymentInfo = ({next,prev}) => {
   };
 
   return (
-    <div className=" font-poppins text-lg ">
-      <div className="lg:w-[70%] mx-auto w-full md:flex bg-gradient-to-r from-indigo-300 to bg-neutral-600 backdrop-blur-lg rounded-[15px] shadow-lg drop-shadow-md p-3">
-        <section className="flex flex-col gap-1 lg:gap-4 lg:w-[45%]">
+    <div className=" font-poppins text-lg  ">
+      <div className="lg:w-[70%]  mx-auto w-full md:flex bg-gradient-to-r from-violet-400 to-neutral-700 backdrop-blur-lg rounded-[15px] shadow-lg shadow-neutral-700 p-3">
+        <section className="flex flex-col gap-1 lg:gap-4 lg:w-[40%]">
           <h2 className=" text-[22px] font-semibold">Provide Card Details </h2>
           <form className="space-y-4 px-2.5" onSubmit={handleSubmit}>
             <InputField type='text'
@@ -106,10 +104,11 @@ const PaymentInfo = ({next,prev}) => {
             />
 
             <section className=" flex justify-between gap-x-2">
-              <CustomButton type={"submit"} color={"bg-green-400"} hoverColor={"bg-green-800"}>Proceed to Review</CustomButton>
-              <CustomButton onClick={() => prev()} color={"bg-orange-400"}>
+            <CustomButton onClick={() => prev()} color={"bg-yellow-500"}>
                 Back to Shipping
               </CustomButton>
+              <CustomButton type={"submit"} color={"bg-violet-700"} hoverColor={"bg-green-800"}>Proceed to Review</CustomButton>
+              
             </section>
           </form>
         </section>
