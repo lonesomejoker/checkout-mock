@@ -105,25 +105,25 @@ const OrderSummary = ({ prev }) => {
             </div>
           ))}
           <section>
-            <h3 className="flex justify-between md:block">
+            <h3 className="flex justify-between">
               SubTotal:{" "}
               <span className="text-violet-600">
                 {subTotal}
                 <span className="text-sm">Rs</span>
               </span>
             </h3>
-            <h3 className="flex justify-between md:block">
+            <h3 className="flex justify-between">
               VAT added(13%):{" "}
               <span className="text-violet-600">
                 {vatAdded}
                 <span className="text-sm">Rs</span>
               </span>
             </h3>
-            <h3 className="flex justify-between md:block">
+            <h3 className="flex justify-between">
               Shipping Cost:{" "}
               <span className="text-violet-600">{shippingCost}Rs</span>
             </h3>
-            <h3 className="border-b-[3px] pb-1 border-violet-700 font-semibold flex justify-between md:block">
+            <h3 className="border-b-[3px] pb-1 border-violet-700 font-semibold flex justify-between ">
               Total:{" "}
               <span className="text-violet-600">{vatAdded + shippingCost}Rs</span>
             </h3>

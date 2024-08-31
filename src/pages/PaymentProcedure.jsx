@@ -99,7 +99,7 @@ const PaymentProcedure = () => {
         <>
         <div className="hidden mt-[6px] mx-auto lg:w-[30%] gap-x-3 sticky bottom-0 font-poppins md:flex items-center">
           <CustomButton color={"bg-yellow-500"} onClick={handleCancel}>Cancel Order</CustomButton>
-          {cart.length===0?<CustomButton color={"bg-red-600"}>Cart is empty</CustomButton>:
+          {cart.length===0?<CustomButton color={"bg-red-600"} onClick={handleMsg}>Cart is empty</CustomButton>:
           <CustomButton color={"bg-violet-600"} onClick={handleDone}>
             Place Order
           </CustomButton>}
