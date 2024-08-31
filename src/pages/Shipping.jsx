@@ -166,7 +166,7 @@ const Shipping = ({ next }) => {
               error={errors.country}
               required
             />
-            <div className="flex gap-x-1.5 mt-6">
+            <div className="flex gap-x-1.5 leading-none">
              
               <CustomButton
                 type="button"

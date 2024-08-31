@@ -50,10 +50,10 @@ const CartProduct = () => {
                     <h1 className=" font-semibold line-clamp-2 text-sm lg:text-[1.2rem]">
                       {item.name}
                     </h1>
-                    <h1 className=" text-violet-600 text-sm lg:text-[1rem] font-[500]">
+                    <h1 className=" text-violet-600 text-[13px] lg:text-[1.1rem] font-[500]">
                       Price: {item.price * item.quantity} Rs
                     </h1>
-                    <ul className=" list-disc ml-2 lg:ml-5 text-zinc-700">
+                    <ul className=" list-disc ml-2.5 lg:ml-5 text-zinc-700 text-[13px] lg:text-lg">
                       <li>category: {item.category}</li>
                       <li>size: {item.size}</li>
                     </ul>
@@ -66,29 +66,30 @@ const CartProduct = () => {
                   />
                 </section>
 
-                <div className=" flex items-center gap-x-3 mt-1.5 font-semibold">
+                <div className=" flex items-center justify-between gap-x-3 mt-1.5 font-semibold">
                   <h1 className=" text-violet-600 text-[1rem]">
-                    Quantity: {item.quantity}
+                    Quantity: 
                   </h1>
-                  <section className=" space-y-1 ml-2">
-                    <FaPlus
-                      className=" border-2 border-gray-300 "
-                      size={20}
-                      onClick={() => handleIncQuantity(item.id, item.quantity)}
-                    />
+                  <section className=" ml-2 flex items-center gap-x-2">
                     <FaMinus
-                      className=" border-2 border-gray-300 "
-                      size={20}
+                      className=" ring-2 ring-gray-400 px-[6.7px] text-[1.5rem] rounded-full"
+                     
                       onClick={() => handleDecQuantity(item.id, item.quantity)}
+                    />
+                    <h2 className=" text-[1rem] md:text-[1.4rem]">{item.quantity}</h2>
+                    <FaPlus
+                      className=" ring-2 ring-emerald-400 px-[6.7px] text-[1.5rem] rounded-full"
+                     
+                      onClick={() => handleIncQuantity(item.id, item.quantity)}
                     />
                   </section>
                 </div>
               </div>
             );
           })}
-          <section className=" flex justify-between font-semibold text-lg">
+          <section className=" flex justify-between font-semibold text-[16px] lg:text-lg">
             <h1>SUB TOTAL: </h1>
-            <h2 className=" text-violet-600">NPR{subTotal}</h2>
+            <h2 className=" text-violet-600">{subTotal}Rs</h2>
           </section>
           <button className=" hover:translate-y-2 duration-300 bg-violet-600 px-3 py-2 text-white w-full " onClick={handleCheckout}>
             CHECK OUT

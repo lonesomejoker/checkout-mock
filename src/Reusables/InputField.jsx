@@ -39,7 +39,7 @@ const InputField = ({
           placeholder={placeholder}
           onChange={onChange}
           required={required}
-          className={`px-2 py-2 border-b-2 rounded-tr-xl hover:scale-105 duration-500 rounded-bl-xl outline-none ${
+          className={`px-2 py-2 border-b-2 rounded-tr-xl w-full hover:scale-105 duration-500 rounded-bl-xl outline-none ${
             error ? "border-b-red-600" : "border-b-gray-200"
           }`}
         />

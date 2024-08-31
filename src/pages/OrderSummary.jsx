@@ -63,14 +63,14 @@ const OrderSummary = ({ prev }) => {
               key={idx}
               className="flex items-start justify-between gap-x-2 border-b-2 border-dashed pb-1.5 border-gray-300"
             >
-              <div className="flex gap-x-1.5 items-start ">
+              <div className="flex gap-x-1.5 items-start leading-none lg:leading-tight">
                 <img
                   src={item.image}
                   className="h-[6.6rem] w-[6.3rem] rounded-lg"
                   alt="pp"
                 />
                 <div className="h-[6.6rem] flex flex-col justify-between">
-                  <section>
+                  <section className=" space-y-1.5">
                     <h1 className=" text-semibold">{item.name}</h1>
                     <h2 className="text-violet-500 flex items-center gap-x-0.5">
                       {item.price}
@@ -78,7 +78,7 @@ const OrderSummary = ({ prev }) => {
                     </h2>
                   </section>
                   <h2
-                    className=" text-violet-600 text-[15px] font-semibold"
+                    className=" text-violet-600 text-[17px] font-semibold"
                     onClick={() => dispatch(removeItem(item.id))}
                   >
                     REMOVE
