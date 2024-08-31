@@ -79,7 +79,7 @@ const PaymentProcedure = () => {
       }}
     >
       <header className="bg-neutral-800 py-2 text-white font-poppins w-full text-[1rem] lg:text-[1.3rem] font-[500] fixed z-50">
-        <section className="flex justify-between container">
+        <section className="flex justify-between container items-center">
           <h1>SysǪube</h1>
           <h1>Order Process</h1>
         </section>
