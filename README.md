@@ -5,7 +5,10 @@
 4) After installing, type: "npm run dev" then press "O" + "Enter" button in keyboard
 6) Finally it will run and open in your local browser.
    
-*NOTE: You must have nodejs installed in your PC , inorder to run above project
+*NOTE: You must have nodejs installed in your PC , inorder to run above project locally.
+
+# Project Demo Link
+https://checkout-task.netlify.app/
 
 # Frameworks and libraries used:
 1) React JS
