@@ -23,9 +23,17 @@ export const shippingData = createSlice({
     
     clearDetails: (state) => {
       state.details = null; // Set to null when clearing details
-    }
+    },
+    updateDetails: (state, action) => {
+      const updatedDetails = action.payload;
+      state.details = { ...state.details, ...updatedDetails }; // Merge the existing details with the updated details
+      notification.success({
+        message: <h1 className="font-poppins">Shipping details updated</h1>,
+      });
+    },
+    
   }
 });
 
-export const { shippingInfo, removeDetails, clearDetails } = shippingData.actions;
+export const { shippingInfo, removeDetails, clearDetails,updateDetails } = shippingData.actions;
 export const shippingReducer = shippingData.reducer;

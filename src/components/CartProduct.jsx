@@ -95,8 +95,9 @@ const CartProduct = () => {
           </button>
         </div>
       ) : (
-        <p className=" font-poppins text-sm font-medium text-red-600">
-          No any Items in the Cart...
+        <p className=" font-poppins text-[16px] font-medium text-violet-600">
+          No any Items in the Cart...<br/>
+          Hover/Click over Product Images to open Add to Cart
         </p>
       )}
     </div>

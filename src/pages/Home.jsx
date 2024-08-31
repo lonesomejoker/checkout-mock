@@ -11,7 +11,7 @@ const Home = () => {
     </div>
     <div className=' flex mt-10'>
      <ProductReusable data={menItems}/>
-    <img src="https://th.bing.com/th/id/OIP.ZPOhC8mBl-lNgRCabIiYpAHaJx?rs=1&pid=ImgDetMain" alt="desc" className=' h-[30rem] w-[19rem] lg:block hidden rounded-r-[2rem]'/>
+    <img src="https://th.bing.com/th/id/OIP.B9y2WsVb4oYfCrAjyjl7IwAAAA?rs=1&pid=ImgDetMain" alt="desc" className=' h-[30rem] w-[19rem] lg:block hidden rounded-r-[2rem]'/>
     </div>
     </div>
   )

@@ -10,7 +10,7 @@ const Navbar = () => {
   const {showDrawer,onClose,open}=useContext(LayoutContext);
   return (
     <div className=' bg-neutral-800 fixed w-full z-[99]'>
-    <div className=' flex container text-white justify-between text-[1.3rem] font-[500]'>
+    <div className=' flex container text-white justify-between text[1rem] lg:text-[1.3rem] font-[500]'>
       <h1>SysǪube</h1>
       <section className=' flex items-center gap-x-6'>
       <h2>HOME</h2>

@@ -38,6 +38,7 @@ const Shipping = ({ next }) => {
   };
 
   const [errors, setErrors] = useState({});
+  
   const validate = () => {
     const tempErrors = {};
 
@@ -61,8 +62,8 @@ const Shipping = ({ next }) => {
       tempErrors.zip_code = "ZIP Code must be exactly 5 digits.";
     }
 
-    if (form.province.length < 2) {
-      tempErrors.province = "Province must be at least 2 characters long.";
+    if (form.province.length < 4) {
+      tempErrors.province = "Province must be at least 4 characters long.";
     }
 
     if (!form.country) {
