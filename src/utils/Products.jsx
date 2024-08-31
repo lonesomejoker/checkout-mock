@@ -1,7 +1,7 @@
 export const womenItems = [
     {
       name: "Leather Jacket",
-      price: 2999,
+      price: 2900,
       image:
         "https://www.fanjackets.com/wp-content/uploads/2021/03/Womens-Black-Motorcycle-Leather-Jacket-510x625.jpg",
       id: 1,
@@ -10,7 +10,7 @@ export const womenItems = [
     },
     {
       name: "Black Skirt",
-      price: 999,
+      price: 900,
       image:
         "https://th.bing.com/th/id/OIP.udnR23KSgPKqoH3y5hw1fAHaHa?rs=1&pid=ImgDetMain",
       id: 2,
@@ -20,7 +20,7 @@ export const womenItems = [
   
     {
       name: "Loose Pants",
-      price: 2999,
+      price: 2400,
       image:
         "https://th.bing.com/th/id/OIP.exCeI4IPbR_lFgwWqyyLCQHaKX?rs=1&pid=ImgDetMain",
       id: 3,
@@ -39,7 +39,7 @@ export const womenItems = [
   
     {
       name: "Black Shoes",
-      price: 1099,
+      price: 1000,
       image:
         "https://ae01.alicdn.com/kf/He6621c00e26d4387b2b9646b1c1b9c89B/Brand-Unisex-Socks-Shoes-Breathable-High-top-Women-Shoes-Flats-Fashion-Sneakers-Stretch-Fabric-Casual-Slip.jpg",
       id: 6,
@@ -48,7 +48,7 @@ export const womenItems = [
     },
     {
       name: "White Sneakers ",
-      price: 2650,
+      price: 2600,
       image:
         "https://ae01.alicdn.com/kf/HTB1YzeoeEcKL1JjSZFzq6AfJXXaa/2017-Women-Running-Shoes-Breathable-Women-Sneaker-Outdoor-Sports-Shoes-Ladies-White-Shoes-Comfortable-Sports-Athletic.jpg_640x640.jpg",
       id: 7,
@@ -57,7 +57,7 @@ export const womenItems = [
     },
     {
       name: "Pink Boots ",
-      price: 4999,
+      price: 4000,
       image:
         "https://th.bing.com/th/id/OIP.d6UPLMqEZi0y3XRQFNZH3gHaHa?rs=1&pid=ImgDetMain",
       id: 8,
@@ -67,7 +67,7 @@ export const womenItems = [
   
     {
       name: "Black Boots",
-      price: 2939,
+      price: 2900,
       image:
         "https://th.bing.com/th/id/OIP.LZ-wTuCP6MRLFIF_W5yc0QHaHa?w=2000&h=2000&rs=1&pid=ImgDetMain",
       id: 9,
@@ -79,10 +79,10 @@ export const womenItems = [
 export const menItems = [
     {
       name: "Leather Jacket",
-      price: 2999,
+      price: 2000,
       image:
         "https://th.bing.com/th/id/OIP.c-RnfG7IlVagjmS4s6VAawHaHa?rs=1&pid=ImgDetMain",
-      id: 1,
+      id: 11,
       category: "Men",
       quantity: 1,
     },
@@ -91,7 +91,7 @@ export const menItems = [
       price: 1999,
       image:
         "https://th.bing.com/th/id/OIP.01-X9ENewmoJl6YOdvf_3wHaLH?rs=1&pid=ImgDetMain",
-      id: 3,
+      id: 13,
       category: "Men",
       quantity: 1,
     },
@@ -100,17 +100,17 @@ export const menItems = [
       price: 2850,
       image:
         "https://images.wrangler.com/is/image/Wrangler/MGW90BR-HERO?$KDP-XLARGE$",
-      id: 4,
-      popularity: 4,
+      id: 14,
       category: "Men",
       quantity: 1,
     },
     {
       name: "Short pants",
       price: 399,
+      quantity:1,
       image:
         "https://th.bing.com/th/id/OIP.240YwnWemEKTjhqm7OwLwAHaHa?rs=1&pid=ImgDetMain",
-      id: 5,
+      id: 15,
       category: "Men",
     },
   
@@ -119,7 +119,7 @@ export const menItems = [
       price: 2009,
       image:
         "https://th.bing.com/th/id/OIP.ZPbi7jMWZEWS001UElGa5AAAAA?rs=1&pid=ImgDetMain",
-      id: 6,
+      id: 16,
       color: "white",
       category: "Men",
       quantity: 1,
@@ -129,7 +129,7 @@ export const menItems = [
       price: 3650,
       image:
         "https://image1.superdry.com/static/images/optimised/zoom/upload9223368955665515016.jpg",
-      id: 7,
+      id: 17,
       category: "Men",
       quantity: 1,
     },
@@ -138,7 +138,7 @@ export const menItems = [
       price: 299,
       image:
         "https://m.media-amazon.com/images/I/91mPP-mQJYL._SL1500_.jpg",
-      id: 8,
+      id: 18,
       category: "Men",
       quantity: 1,
     },
@@ -148,7 +148,7 @@ export const menItems = [
       price: 2939,
       image:
         "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/7aeea36ec1addb6490c0670427fde981.jpg?imageView2/2/w/500/q/60/format/webp",
-      id: 9,
+      id: 19,
       category: "Men",
       quantity: 1,
     },

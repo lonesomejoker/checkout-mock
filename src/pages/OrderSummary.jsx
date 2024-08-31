@@ -11,7 +11,7 @@ const OrderSummary = ({ prev }) => {
     return prev + item.price * item.quantity;
   }, 0);
 
-  const shippingCost = 2000;
+  const shippingCost = 1000;
   const vatAdded = (13 / 100) * subTotal + subTotal;
 
   const maskNumber = (number) => {
@@ -74,7 +74,7 @@ const OrderSummary = ({ prev }) => {
             <h3 className=" border-b-[3px] pb-1  border-violet-700 font-semibold">
               Total:
               <span className=" text-violet-600">
-                {subTotal + vatAdded + shippingCost}
+                {vatAdded + shippingCost}
               </span>
               <span className=" text-violet-600 text-sm">Rs</span>
             </h3>
