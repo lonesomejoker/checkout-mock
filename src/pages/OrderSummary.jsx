@@ -86,16 +86,16 @@ const OrderSummary = ({ prev }) => {
                 </div>
               </div>
               <section>
-                <h2 className=" space-x-2 font-semibold">
+                <h2 className=" space-x-2 font-semibold flex">
                   <span
-                    className="rounded-full ring-2 ring-gray-300 px-2 mr-1"
+                    className="rounded-full ring-2 ring-gray-300 px-[8.2px] mr-2"
                     onClick={() => dispatch(decrementQty(item.id))}
                   >
                     -
                   </span>{" "}
                   {item.quantity}
                   <span
-                    className="ml-1 rounded-full ring-2 ring-emerald-400 px-1.5"
+                    className="ml-2 rounded-full ring-2 ring-emerald-400 px-[7.4px]"
                     onClick={() => dispatch(incrementQty(item.id))}
                   >
                     +
