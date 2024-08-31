@@ -166,7 +166,7 @@ const Shipping = ({ next }) => {
               error={errors.country}
               required
             />
-            <div className="flex gap-x-1.5 leading-none">
+            <div className="flex gap-x-1.5 ">
              
               <CustomButton
                 type="button"
@@ -175,7 +175,7 @@ const Shipping = ({ next }) => {
               >
                 Back to Cart
               </CustomButton>
-              <CustomButton type={"submit"} color={"bg-violet-700"}>
+              <CustomButton type={"submit"} color={"bg-violet-700"} >
                 Proceed to Payment
               </CustomButton>
             </div>

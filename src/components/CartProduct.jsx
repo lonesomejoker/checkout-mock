@@ -76,7 +76,7 @@ const CartProduct = () => {
                      
                       onClick={() => handleDecQuantity(item.id, item.quantity)}
                     />
-                    <h2 className=" text-[1rem] md:text-[1.4rem]">{item.quantity}</h2>
+                    <h2 className=" text-[1rem]">{item.quantity}</h2>
                     <FaPlus
                       className=" ring-2 ring-emerald-400 px-[6.7px] text-[1.5rem] rounded-full"
                      
