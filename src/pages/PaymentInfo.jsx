@@ -35,8 +35,8 @@ const PaymentInfo = ({next,prev}) => {
   const validate = () => {
     const tempErrors = {};
 
-    if (form.holder_name.length < 5) {
-      tempErrors.holder_name = 'Holder Name must be at least 5 characters long.';
+    if (form.holder_name.length < 5 || form.holder_name.length >20) {
+      tempErrors.holder_name = 'Holder Name must be 5-20 characters long.';
     }
 
     if (!/^\d{16}$/.test(form.card_number)) {

@@ -31,7 +31,7 @@ const ProductReusable = ({ data }) => {
           <div className={`duration-300 fade-in-block opacity-${isHovered === item.id ? "100" : "0"} ${isHovered === item.id ? "visible" : "invisible"} transition-opacity duration-300 ease-in-out`}>
             <div className="w-full text-[1rem] font-[500] text-white">
               <section className="flex text-violet-500 bg-neutral-800 px-3 py-2 gap-x-2 items-center justify-center" onClick={() => setIsClicked(item.id)}>
-                {isClicked ? (
+                {isClicked===item.id ? (
                   <>
                     <h2>Pick a size</h2>
                     <IoArrowUp className="text-sm md:text-2xl" />
@@ -46,12 +46,9 @@ const ProductReusable = ({ data }) => {
               {isClicked === item.id && (
                 <div
                   className={`absolute top-0 bg-neutral-600 bg-opacity-40
-                    font-poppins w-full inset-0 md:text-sm text-[10px] font-light
-                    transform translate-y-full transition-transform duration-500 ease-in-out`}
+                    font-poppins w-full inset-0 md:text-sm text-[10px] font-light`}
                   onMouseLeave={() => setIsClicked(null)}
-                  style={{
-                    transform: isClicked === item.id ? 'translateY(0)' : 'translateY(100%)',
-                  }}
+                 
                 >
                   <h1 className="bg-opacity-15 text-center my-1">Select Size</h1>
                   <div className="grid grid-cols-3 gap-x-0.5 md:gap-x-2 gap-y-1.5 px-2">

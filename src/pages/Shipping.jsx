@@ -42,28 +42,28 @@ const Shipping = ({ next }) => {
   const validate = () => {
     const tempErrors = {};
 
-    if (form.full_name.length < 3) {
-      tempErrors.full_name = "Full Name must be at least 3 characters long.";
+    if (form.full_name.length < 5 || form.full_name.length>25) {
+      tempErrors.full_name = "Full Name must be betwen 5-25 characters.";
     }
 
     if (!/^\d{10}$/.test(form.phone_number)) {
       tempErrors.phone_number = "Phone Number must be 10 digits.";
     }
 
-    if (form.address.length < 4) {
-      tempErrors.address = "Address must be at least 4 characters long.";
+    if (form.address.length < 4 || form.address.length >20) {
+      tempErrors.address = "Address must be between 4-20 characters.";
     }
 
-    if (form.city.length < 2) {
-      tempErrors.city = "City must be at least 2 characters long.";
+    if (form.city.length < 4 || form.city.length >20) {
+      tempErrors.city = "City must be between 4-20 characters.";
     }
 
     if (!/^\d{5}$/.test(form.zip_code)) {
       tempErrors.zip_code = "ZIP Code must be exactly 5 digits.";
     }
 
-    if (form.province.length < 4) {
-      tempErrors.province = "Province must be at least 4 characters long.";
+    if (form.province.length < 4 || form.province.length >20) {
+      tempErrors.province = "Province must be between 4-20 characters.";
     }
 
     if (!form.country) {
