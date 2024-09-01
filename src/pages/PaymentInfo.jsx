@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import InputField from "../Reusables/InputField";
 import CustomButton from '../Reusables/CustomButton';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { paymentData } from '../app/slices/PaymentSlice';
 
 const PaymentInfo = ({next,prev}) => {

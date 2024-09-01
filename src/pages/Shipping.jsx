@@ -22,7 +22,6 @@ const Shipping = ({ next }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name === "zip_code") {
-      // Allow only digits and ensure it's no more than 16 characters long
       if (/^\d{0,5}$/.test(value)) {
         setForm({ ...form, [name]: value });
       }

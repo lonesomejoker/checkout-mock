@@ -10,7 +10,7 @@ export const paymentSlice = createSlice({
   reducers: {
     paymentData: (state, action) => {
       const paymentInfo = action.payload;
-      state.paydetails = paymentInfo; // Replace the existing details with the new one
+      state.paydetails = paymentInfo; 
       notification.success({
         message: <h1 className="font-poppins">Payment details received</h1>,
       });
