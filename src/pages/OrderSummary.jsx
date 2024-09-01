@@ -28,7 +28,7 @@ const OrderSummary = ({ prev }) => {
     0
   );
   const shippingCost = cart.length === 0 ? 0 : 1000;
-  const vatAdded = (13 / 100) * subTotal + subTotal;
+  const vatAdded = (13 / 100) * subTotal ;
 
   const maskNumber = (number) =>
     number ? "*".repeat(number.length - 3) + number.slice(-3) : "";
@@ -113,7 +113,7 @@ const OrderSummary = ({ prev }) => {
               </span>
             </h3>
             <h3 className="flex justify-between">
-              VAT added(13%):{" "}
+              VAT (13%):{" "}
               <span className="text-violet-600">
                 {vatAdded}
                 <span className="text-sm">Rs</span>
@@ -125,7 +125,7 @@ const OrderSummary = ({ prev }) => {
             </h3>
             <h3 className="border-b-[3px] pb-1 border-violet-700 font-semibold flex justify-between ">
               Total:{" "}
-              <span className="text-violet-600">{vatAdded + shippingCost}Rs</span>
+              <span className="text-violet-600">{vatAdded + shippingCost+subTotal}Rs</span>
             </h3>
           </section>
         </div>
