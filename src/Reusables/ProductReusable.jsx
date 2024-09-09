@@ -18,7 +18,7 @@ const ProductReusable = ({ data }) => {
   return (
     <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2.5 px-2'>
       {data.map((item) => (
-        <div key={item.id} className={`rounded-tl-[3rem] rounded-br-[3rem] ${isHovered === item.id ? "shadow shadow-violet-400 flex flex-col justify-between transition-transform duration-500 rounded-t-xl scale-110 z-10 overflow-hidden" : "duration-500"}`}
+        <div key={item.id} className={`rounded-tl-[3rem] rounded-br-[3rem] ${isHovered === item.id ? "shadow shadow-violet-400 flex flex-col justify-between duration-500 rounded-t-xl scale-110 z-10 overflow-hidden" : "duration-500"}`}
           onMouseEnter={() => setIsHovered(item.id)}
           onMouseLeave={() => setIsHovered(null)}>
           <section className={`rounded-md`}>
@@ -28,7 +28,7 @@ const ProductReusable = ({ data }) => {
               <h1 className='text-[14px] text-violet-600 font-semibold xl:text-[16px] flex items-center lg:items-start gap-x-0.5'>{item.price} <span className='text-[12px]'>Rs</span></h1>
             </section>
           </section>
-          <div className={`duration-300 fade-in-block opacity-${isHovered === item.id ? "100" : "0"} ${isHovered === item.id ? "visible" : "invisible"} transition-opacity duration-300 ease-in-out`}>
+          <div className={`duration-300 opacity-${isHovered === item.id ? "100" : "0"} ${isHovered === item.id ? "visible" : "invisible"} transition-opacity duration-300 ease-in-out`}>
             <div className="w-full text-[1rem] font-[500] text-white">
               <section className="flex text-violet-500 bg-neutral-800 px-3 py-2 gap-x-2 items-center justify-center" onClick={() => setIsClicked(item.id)}>
                 {isClicked===item.id ? (

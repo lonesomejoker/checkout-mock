@@ -11,6 +11,7 @@ const PaymentProcedure = () => {
   const [current, setCurrent] = useState(0);
   const { cart } = useSelector((state) => state.cartslice);
   const navigate = useNavigate();
+  
   const next = () => {
     setCurrent((prevCurrent) => {
       const newCurrent = prevCurrent + 1;

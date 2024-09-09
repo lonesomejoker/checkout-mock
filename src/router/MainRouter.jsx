@@ -2,8 +2,6 @@ import { createBrowserRouter, createRoutesFromElements, Route } from "react-rout
 import Home from "../pages/Home";
 import UserLayout from "../layout/UserLayout";
 import PaymentProcedure from "../pages/PaymentProcedure";
-import Shipping from "../pages/Shipping";
-import PaymentInfo from "../pages/PaymentInfo";
 
 export const MainRouter=createBrowserRouter(
     createRoutesFromElements(
